@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Signup() {
     return (
@@ -15,7 +16,7 @@ function Signup() {
                     <label>"user-email">Email: </label>
                     <input placeholder="youremail@gmail.com" type="text" name="user-email" id="user-email" required />
                 </div>
-                <button type="submit">Submit</button>
+                <Link to='/member-account'><button>Submit</button></Link>
             </form>
         </section>
 

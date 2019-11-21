@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function ReceiveMessage() {
     return (
@@ -10,8 +11,8 @@ function ReceiveMessage() {
                 <p>[ placeholder for the responseAlert]</p>
             </section>
             <section>
-                <button type="submit" class="respond-button">Respond</button>
-                <button type="submit" class="ok-button">Ok</button>
+                <Link to='/send-message'><button>Respond</button></Link>
+                <Link to='/member-account'><button>Ok</button></Link>
             </section>
         </>
     )

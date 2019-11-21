@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function MemberAccount() {
     return (
@@ -7,21 +8,21 @@ function MemberAccount() {
                 <header>
                     <h3>Member Account</h3>
                 </header>
-                <div class="user-info">
+                <div className="user-info">
                     <ul>
                         <li>User name</li>
                         <li>User email</li>
                     </ul>
                 </div>
-                <button type="submit" class="js-editUser">Edit</button>
+                <button type="submit" className="js-editUser">Edit</button>
             </section>
             <section>
                 <header>
                     <h3>Members</h3>
                 </header>
-                <button type="submit" class="js-addMember">Add Member</button>
-                <button type="submit" class="js-deleteMember">Delete Member</button>
-                <div class="member-info">
+                <button type="submit" className="js-addMember">Add Member</button>
+                <button type="submit" className="js-deleteMember">Delete Member</button>
+                <div className="member-info">
                     <ul>
                         <li>User names</li>
                         <li>User names</li>
@@ -33,7 +34,7 @@ function MemberAccount() {
                 <header>
                     <h3>Send Message</h3>
                 </header>
-                <button type="submit" class="js-send-message">Send Message</button>
+                <Link to='/send-message'><button>Send Message</button></Link>
                 </section>
       </>
             )

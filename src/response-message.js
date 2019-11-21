@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 function ResponseMessage() {
@@ -17,18 +18,20 @@ function ResponseMessage() {
                     <h3>Respond: </h3>
                 </header>
                 <div class="responseButtons">
-                    <button type="submit" id="green-button">Yes</button>
-                    <button type="submit" id="red-button">No</button>
-                    <button type="submit" id="yellow-button">On My Way</button>
-                    <button type="submit" id="orange-button">Running Late</button>
-                    <button type="submit" id="blue-button">I have a ride</button>
-                    <button type="submit" id="purple-button">I'm staying after school</button>
-                    <button type="submit" id="pink-button">Sleeping over</button>
-                    <button type="submit" id="lightblue-button">I called Mom </button>
-                    <button type="submit" id="lightgreen-button">I called Dad</button>
-                    <button type="submit" id="lavender-button">I'm locked out</button>
-                    <button type="submit" id="white-button">I lost my key</button>
-                    <button type="submit" id="brown-button">I found my key</button>
+                    <Link to="/receive-message">
+                     <button id="green-button">Yes</button>
+                     <button id="red-button">No</button>
+                     <button id="yellow-button">On My Way</button>
+                     <button id="orange-button">Running Late</button>
+                     <button id="blue-button">I have a ride</button>
+                     <button id="purple-button">I'm staying after school</button>
+                     <button id="pink-button">Sleeping over</button>
+                     <button id="lightblue-button">I called Mom </button>
+                     <button id="lightgreen-button">I called Dad</button>
+                     <button id="lavender-button">I'm locked out</button>
+                     <button id="white-button">I lost my key</button>
+                     <button id="brown-button">I found my key</button>
+                   </Link>
                 </div>
             </section>
             <section>

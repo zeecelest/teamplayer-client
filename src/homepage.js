@@ -32,7 +32,7 @@ function Homepage() {
     <label>User name</label>
     <input placeholder="User name" type="text" name="user-name" id="user-name" required />
   </div>
-  <button type="submit" className="js-loginButton">Login</button>
+  <Link to='/member-account'><button>Login</button></Link>
 </form>
 </section>
 </>
