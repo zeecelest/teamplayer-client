@@ -7,6 +7,7 @@ import ResponseMessage from './response-message';
 import Header from './header';
 import MemberAccount from './member-account';
 import SendMessage from './send-message';
+import ReceiveMessage from './receive-message';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
     <Route exact path="/response-message" component={ResponseMessage} />
     <Route exact path="/member-account" component={MemberAccount} />
     <Route exact path="/send-message" component={SendMessage} />
+    <Route exact path="/receive-message" component={ReceiveMessage} />
     </>
 
   );
