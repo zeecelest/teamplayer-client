@@ -17,7 +17,7 @@ function Homepage() {
 
 <section>
 <header>
-  <h3>Fast and easy way to "Check-In" with your child!</h3>
+  <h3>Fast and easy way to communicate with your team!</h3>
  </header>
   <p className="screenShots">[<em> placeholder for screenshot of sendMessage page </em>]</p>
   <p className="screenShots">[<em> placeholder for screenshot of receiveMessage page </em>]</p>
@@ -39,16 +39,6 @@ function Homepage() {
   );
 }
 
-// class startButton extends React.Component {
-//     render () {
-//         return (
-//             <button
-//                 className='js-startButton'
-//                 onClick={this.props.handleClick}>Sign Up
-//             </button>
-//         )
-//     }
-// }
 
 export default Homepage;
-    // startButton
+   
