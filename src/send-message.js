@@ -4,20 +4,6 @@ import { Link } from 'react-router-dom';
 function SendMessage() {
     return (
         <>
-        <section>
-                <header>
-                    <h4>Choose a Member: </h4>
-                </header>
-                <form>
-                    <select name="member-option">
-                        <option value="member1">Member 1</option>
-                        <option value="member2">Member 2</option>
-                        <option value="member3">Member 3</option>
-                        <option value="member4">Member 4</option>
-                        <option value="member5">Member 5</option>
-                    </select>
-                </form>
-            </section>
             <section>
                 <header>
                     <h4>Choose a Message: </h4>
@@ -39,7 +25,7 @@ function SendMessage() {
                 <form>
                     <input type="text" id="message-text" placeholder="Type your message here"></input>
                     <br></br>
-                    <Link to='/response-message'><button>Send Message</button></Link>
+                    <Link to='/receive-message'><button>Send Message</button></Link>
                 </form>
             </section>
   </>

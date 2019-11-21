@@ -12,7 +12,6 @@ function Homepage() {
       simplifying the process.  With "Team-Player" the manager can send a message
       to a team member and the team member can respond simply by selecting a colored
         and labeled response.</p>
-      <Link to='/signup'><button>Sign Up Here</button></Link>
     </section>
 
 <section>
@@ -23,22 +22,10 @@ function Homepage() {
   <p className="screenShots">[<em> placeholder for screenshot of receiveMessage page </em>]</p>
   <p className="screenShots">[<em> placeholder for screenshot of responseButton page </em>]</p>
 </section>
-<section>
-<header>
-  <h4>Login</h4>
-</header>
-<form className="login-form">
-  <div>
-    <label>User name</label>
-    <input placeholder="User name" type="text" name="user-name" id="user-name" required />
-  </div>
-  <Link to='/member-account'><button>Login</button></Link>
-</form>
-</section>
+<Link to='/send-message'><button>Get Started</button></Link>
 </>
   );
 }
-
 
 export default Homepage;
    

@@ -6,13 +6,13 @@ function ReceiveMessage() {
         <>
             <section>
                 <header>
-                    <h4>Response</h4>
+                    <h4>Message Received</h4>
                 </header>
                 <p>[ placeholder for the responseAlert]</p>
             </section>
             <section>
-                <Link to='/send-message'><button>Respond</button></Link>
-                <Link to='/member-account'><button>Got it!</button></Link>
+                <Link to='/response-message'><button>Respond</button></Link>
+                <Link to='/send-message'><button>Got it!</button></Link>
             </section>
         </>
     )

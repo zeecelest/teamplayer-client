@@ -39,7 +39,7 @@ function ResponseMessage() {
                 <form>
                     <input type="text" id="message-text" placeholder="Type your message here"></input>
                 <br></br>
-                    <button type="submit" class="js-sendMessage-button">Send Message</button>
+                    <Link to="/receive-message"><button>Send Message</button></Link>
                 </form>
             </section>
             </>
