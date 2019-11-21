@@ -8,6 +8,7 @@ import Header from './header';
 import MemberAccount from './member-account';
 import SendMessage from './send-message';
 import ReceiveMessage from './receive-message';
+import Footer from './footer';
 
 
 function App() {

@@ -34,7 +34,7 @@ function MemberAccount() {
                 <header>
                     <h3>Send Message</h3>
                 </header>
-                <Link to='/send-message'><button>Send Message</button></Link>
+                <Link to='/response-message'><button>Send Message</button></Link>
                 </section>
       </>
             )

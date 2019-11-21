@@ -12,7 +12,7 @@ function ReceiveMessage() {
             </section>
             <section>
                 <Link to='/send-message'><button>Respond</button></Link>
-                <Link to='/member-account'><button>Ok</button></Link>
+                <Link to='/member-account'><button>Got it!</button></Link>
             </section>
         </>
     )

@@ -1,11 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function footer() {
+function Footer() {
     return (
-        <footer role="content info">
+        <footer>
             <Link to='/member-account'>Return to Account</Link>
             <Link to='/homepage'>Home</Link>
         </footer>
     );
 };
+
+export default Footer;

@@ -39,7 +39,7 @@ function SendMessage() {
                 <form>
                     <input type="text" id="message-text" placeholder="Type your message here"></input>
                     <br></br>
-                    <Link to='/receive-message'><button>Send Message</button></Link>
+                    <Link to='/response-message'><button>Send Message</button></Link>
                 </form>
             </section>
   </>
