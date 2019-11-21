@@ -10,11 +10,11 @@ function SendMessage() {
                 </header>
                 <form>
                     <select name="message-option">
-                        <option value="message1">Message 1</option>
-                        <option value="message2">Message 2</option>
-                        <option value="message3">Message 3</option>
-                        <option value="message4">Message 4</option>
-                        <option value="message5">Message 5</option>
+                        <option value="message1">Are today's task(s) complete?</option>
+                        <option value="message2">Do you need additional asstance?</option>
+                        <option value="message3">What is the ETA for completion?</option>
+                        <option value="message4">Where are you?</option>
+                        <option value="message5">Time for our meeting.</option>
                     </select>
                 </form>
             </section>
