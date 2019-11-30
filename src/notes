@@ -1,6 +1,7 @@
-need to complete member-account page
-need to add functionality to add member, delete member, and edit buttons
-creat function for data added in input
-user name and email should display on member-account page
-new members added should appear in a list on the member-account page
-if time permits add a message component to show list of messages sent and to whom
+no longer showing message list, need to resolve
+
+figure out why required fields (recipient, messages) are not working, i.e. allowing message to be sent 
+create test for what happens if no recipient and/or message is entered
+
+message should appear on receive-message page after sent, but current not showing message sent
+

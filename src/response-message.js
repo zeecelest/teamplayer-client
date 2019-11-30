@@ -9,8 +9,8 @@ function ResponseMessage() {
                 <header>
                     <h3>Message Received:</h3>
                 </header>
-                <div class="messageAlert">
-                    <p>[ placeholder for alert pop up of message sent ]</p>
+                <div className="messageReceived">
+                    <h3>Message Received</h3>
                 </div>
             </section>
             <section>
@@ -19,6 +19,7 @@ function ResponseMessage() {
                 </header>
                 <div class="responseButtons">
                     <Link to="/receive-message">
+                     <button id="white-button">Message Received Successfully</button>
                      <button id="green-button">Yes</button>
                      <button id="red-button">No</button>
                      <button id="yellow-button">Almost done</button>
@@ -34,10 +35,10 @@ function ResponseMessage() {
             </section>
             <section>
                 <header>
-                    <h3>Write a message(optional)</h3>
+                    <h3>Write a message</h3>
                 </header>
                 <form>
-                    <input type="text" id="message-text" placeholder="Type your message here"></input>
+                    <input type="text" id="message-text" placeholder="(optional)"></input>
                 <br></br>
                     <Link to="/receive-message"><button>Send Message</button></Link>
                 </form>
