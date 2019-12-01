@@ -6,8 +6,9 @@ class SendMessage extends React.Component {
     onSubmit(e) {
         e.preventDefault();
         let data = {
-            message: e.target.sentMessage.value,
             recipient: e.target.sentMessage.value,
+            message: e.target.sentMessage.value,
+            
             
         };
 
@@ -32,6 +33,7 @@ class SendMessage extends React.Component {
                 <header>
                     <h4>Send a message</h4>
                 </header>
+                <MessagesList />
                 <form onSubmit={this.onSubmit}>
                     <h3>Recipient</h3>
                     <input type="text" name="recipient" id="recipient" placeholder="i.e. John" required></input>
@@ -40,7 +42,7 @@ class SendMessage extends React.Component {
                     <br></br>
                    <Link to="/receive-message"><button>Send Message</button></Link>
                 </form>
-                <MessagesList />
+               
             </section>
         </>
             )

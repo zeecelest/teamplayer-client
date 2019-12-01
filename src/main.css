@@ -3,12 +3,15 @@
 }
 
 body { 
-    background-image: url('https://www.industryweek.com/sites/industryweek.com/files/styles/article_featured_retina/public/uploads/2017/05/teamwork.jpg?itok=U5ZihnwP');
+    /* background-image: url('https://www.industryweek.com/sites/industryweek.com/files/styles/article_featured_retina/public/uploads/2017/05/teamwork.jpg?itok=U5ZihnwP'); */
     display: flex;
     flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    padding: 20px;
 }
 
-/* nav {
+nav ul{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -24,23 +27,26 @@ body {
     right: 0;
     z-index: 10;
     
-} */
+}
 
- ul {
+ nav ul {
     flex-direction: row;
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
+} 
 
 #banner {
+    position: relative;
     flex-direction: column;
     justify-items: center;
     text-align: center;
 }
-#banner {
+
+.about {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
 }
+
+
 
