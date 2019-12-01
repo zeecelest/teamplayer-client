@@ -21,6 +21,7 @@ class MessagesList extends Component {
 
   render() {
     const { messages } = this.state
+    console.log(this.state);
     const x = messages.map(message => 
       <div className="message-recipient">
         <li>{message.recipient}</li>
