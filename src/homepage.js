@@ -2,10 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
+
 class Homepage extends React.Component {
   onSubmit = (e) => {
     e.preventDefault();
-      localStorage.username = e.target.username.value;
+      // localStorage.username = e.target.username.value;
       this.props.history.push("/send-message")
     }
 
@@ -49,9 +50,9 @@ class Homepage extends React.Component {
   <p className="screenShots">[<em> placeholder for screenshot of responseButton page </em>]</p>
 </section>
 <form onSubmit={this.onSubmit}>
-                    <h3>Enter a username to get started.</h3>
-                    <input type="text" name="username" id="username" placeholder="i.e. John" required></input>
-                    <Link to='/send-message'><button>Sign In</button></Link>
+                    {/* <h3>Enter a username to get started.</h3>
+                    <input type="text" name="username" id="username" placeholder="i.e. John" required></input> */}
+                    <Link to='/send-message'><button>Get Started</button></Link>
                 </form>
 {/* <button>Get Started</button> */}
 </>

@@ -36,7 +36,7 @@ nav ul{
     padding: 0;
 } 
 
-#banner {
+#banner h1 {
     position: relative;
     flex-direction: column;
     justify-items: center;

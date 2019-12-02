@@ -12,7 +12,7 @@ function Header() {
         </nav>
         <br></br>
         <header role="banner" id="banner">
-            <h1>Team Player</h1>
+           <h1>Team Player</h1>
         </header>
     </>
     );

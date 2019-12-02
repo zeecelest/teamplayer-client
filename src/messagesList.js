@@ -10,7 +10,7 @@ class MessagesList extends Component {
   }
 
   componentDidMount() {
-    fetch('http://localhost:8000/api/messages')
+    fetch('http://localhost:8000/api/messages/')
     .then(response => response.json())
     .then(data => {
       this.setState({
@@ -21,18 +21,23 @@ class MessagesList extends Component {
 
   render() {
     // const { messages } = this.state
+    this.messages = this.state.messages.map((recipient, message) => 
+      <div className="message-recipient">
+        <li>{ message.recipient }</li>
+        <li>{ message.message }</li>
+        <li>{ message.date_published }</li>
+      </div>
+    )
     console.log(this.state);
     // const x = messages.map(message => 
-    //   <div className="message-recipient">
-    //     <li>{message.recipient}</li>
-    //   </div>
+    //  
       
       // )
   
     
     return (
       <>
-      {/* {x} */}
+     {this.messages}
       </>
         )
       }
