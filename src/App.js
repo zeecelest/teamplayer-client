@@ -13,20 +13,20 @@ import MessagesList from './messagesList';
 
 import Footer from './footer';
 
-
-function App() {
-  return ( 
-    <>
-    <Header></Header>
-    <Route exact path="/homepage" component={Homepage} />
-    <Route exact path="/messagesList" component={MessagesList} />
-    <Route exact path="/send-message" component={SendMessage} />
-    <Route exact path="/receive-message" component={ReceiveMessage} />
-    <Route exact path="/response-message" component={ResponseMessage} />
-    <Footer></Footer>
-    </>
-
-  );
+class App extends React.Component {
+  render() { 
+    return ( 
+      <>
+      <Header></Header>
+      <Route exact path="/homepage" component={Homepage} />
+      <Route exact path="/messagesList" component={MessagesList} />
+      <Route exact path="/send-message" component={SendMessage} />
+      <Route exact path="/receive-message" component={ReceiveMessage} />
+      <Route exact path="/response-message" component={ResponseMessage} />
+      <Footer></Footer>
+      </>
+    );
+  }
 }
 
 export default App;

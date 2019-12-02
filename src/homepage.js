@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 class Homepage extends React.Component {
@@ -51,9 +51,9 @@ class Homepage extends React.Component {
 <form onSubmit={this.onSubmit}>
                     <h3>Enter a username to get started.</h3>
                     <input type="text" name="username" id="username" placeholder="i.e. John" required></input>
-                    <button>Sign In</button>
+                    <Link to='/send-message'><button>Sign In</button></Link>
                 </form>
-{/* <Link to='/send-message'><button>Get Started</button></Link> */}
+{/* <button>Get Started</button> */}
 </>
   );
 }

@@ -20,19 +20,19 @@ class MessagesList extends Component {
   }
 
   render() {
-    const { messages } = this.state
+    // const { messages } = this.state
     console.log(this.state);
-    const x = messages.map(message => 
-      <div className="message-recipient">
-        <li>{message.recipient}</li>
-      </div>
+    // const x = messages.map(message => 
+    //   <div className="message-recipient">
+    //     <li>{message.recipient}</li>
+    //   </div>
       
-      )
+      // )
   
     
     return (
       <>
-      {x}
+      {/* {x} */}
       </>
         )
       }
