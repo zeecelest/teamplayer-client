@@ -28,13 +28,10 @@ class MessagesList extends Component {
         <li>{ message.date_published }</li>
       </div>
     )
-    console.log(this.state);
+    // console.log(this.state.messages);
     // const x = messages.map(message => 
     //  
-      
       // )
-  
-    
     return (
       <>
      {this.messages}
