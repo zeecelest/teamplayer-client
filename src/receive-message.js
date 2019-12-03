@@ -13,7 +13,7 @@ class ReceiveMessage extends React.Component {
     
       componentDidMount() {
         // Promise.all([
-          fetch(`http://localhost:8000/api/messages?username=${localStorage.username}`)
+          fetch(`http://localhost:8000/api/messages/`)
           // fetch(`http://localhost:8000/api/message?received_message=${localStorage.received_message}`)
         // ])
         .then(response => response.json())

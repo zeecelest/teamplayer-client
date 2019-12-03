@@ -1,19 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import MessagesList from './messagesList';
 
 class SendMessage extends React.Component {
-    onSubmit(e) {
+    onSubmit = (e) => {
         e.preventDefault();
         let data = {
-            recipient: e.target.sentMessage.value,
-            message: e.target.sentMessage.value,
-            
+            recipient: e.target.recipient.value,
+            message: e.target.sentMessage.value, 
             
         };
 
-        fetch(`http://localhost:8000/api/messages?username=${localStorage.username}`, {
-            method: "post",
+        fetch(`http://localhost:8000/api/messages/`, {
+            method: "POST",
             headers: {
                 "content-type": "application/json"
             },
@@ -21,10 +19,12 @@ class SendMessage extends React.Component {
 
         }) 
         .then(res => {
-            console.log(res)
+            this.props.history.push("/response-message")
         })
         
     }
+
+   
 
     render() {
         return (
@@ -39,9 +39,9 @@ class SendMessage extends React.Component {
                     <h3>Message</h3>
                     <input type="text" name="sentMessage" id="message-text" placeholder="Type your message here" required></input>
                     <br></br>
-                   <Link to="/receive-message"><button>Send Message</button></Link>
+                   <button type='submit'>Send Message</button>
                 </form>
-                <MessagesList />
+                <MessagesList {...this.props}/>
             </section>
         </>
             )

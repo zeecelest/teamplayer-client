@@ -9,23 +9,34 @@ class MessagesList extends Component {
     }
   }
 
-  componentDidMount() {
-    fetch('http://localhost:8000/api/messages/')
-    .then(response => response.json())
-    .then(data => {
-      this.setState({
-        messages: data
-      })
-    })
-  }
+ 
+//intervals every 5 seconds
+  async componentDidMount() { 
+    try { 
+      this.intervalId = setInterval(async () => { 
+      fetch('http://localhost:8000/api/messages/')
+      .then(response => response.json())
+      .then(data => {
+        this.setState({
+          messages: data
+        })
+      }); }, 5000);
+     } catch (e) { 
+       console.log(e); 
+      } 
+    }
 
+onReply = (e) => {
+  this.props.history.push("/response-message")
+}
+    
   render() {
     // const { messages } = this.state
-    this.messages = this.state.messages.map((recipient, message) => 
-      <div className="message-recipient">
-        <li>{ message.recipient }</li>
-        <li>{ message.message }</li>
-        <li>{ message.date_published }</li>
+    this.messages = this.state.messages.map((message) => 
+      <div className="message-recipient" key={message.id}>
+        <li>Recipient:{ message.recipient }</li>
+        <li>Message:{ message.message }</li>
+        <button type="button" onClick={this.onReply}>Reply</button>
       </div>
     )
     // console.log(this.state.messages);
@@ -38,7 +49,7 @@ class MessagesList extends Component {
       </>
         )
       }
-    }
+    
 
     // function readableReviewCount(number) {
     //   switch(number) {
@@ -57,6 +68,6 @@ class MessagesList extends Component {
     //     return words.slice(0, 10).join(' ') + '...'
     //   }
     //   return text
-    // }
-
+    // 
+}
 export default MessagesList;

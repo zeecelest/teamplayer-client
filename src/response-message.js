@@ -2,9 +2,31 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
-function ResponseMessage() {
+class ResponseMessage extends React.Component {
+    sendMessage(message) {
+    
+        let data = {
+                // recipient: e.target.recipient.value,
+                message 
+                
+            };
+    
+            fetch(`http://localhost:8000/api/messages/`, {
+                method: "POST",
+                headers: {
+                    "content-type": "application/json"
+                },
+                body: JSON.stringify(data)
+    
+            }) 
+            .then(res => {
+                this.props.history.push("/send-message")
+            })
+            
+        }
+        render() {
     return (
-    <>
+        <>
             <section>
                 <header>
                     <h3>Message Received:</h3>
@@ -17,7 +39,7 @@ function ResponseMessage() {
                 <header>
                     <h3>Respond: </h3>
                 </header>
-                <div class="responseButtons">
+                <div className="responseButtons">
                     <Link to="/receive-message">
                      <button id="white-button">Message Received Successfully</button>
                      <button id="green-button">Yes</button>
@@ -46,5 +68,6 @@ function ResponseMessage() {
             </>
             )
         };
+    }
 
 export default ResponseMessage;
