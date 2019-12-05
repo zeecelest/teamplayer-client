@@ -3,12 +3,17 @@
 }
 
 body { 
-    /* background-image: url('https://www.industryweek.com/sites/industryweek.com/files/styles/article_featured_retina/public/uploads/2017/05/teamwork.jpg?itok=U5ZihnwP'); */
+    background-image: url('http://www.ipma.world/assets/distributed-team.jpg');
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.7;
     padding: 20px;
+}
+
+img {
+    opacity: 0.5;
 }
 
 nav ul{
@@ -35,6 +40,14 @@ nav ul{
     margin: 0;
     padding: 0;
 } 
+#navLinks {
+    border: 3px solid blue;
+}
+
+#home {
+    border: 2px solid blue;
+    justify-content: center;
+}
 
 #banner h1 {
     position: relative;
@@ -46,7 +59,135 @@ nav ul{
 .about {
     flex-direction: column;
     text-align: center;
+    /* background-color: blue; */
+    border: 10px solid blue;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.screenShots {
+    flex-direction: column;
+    text-align: center;
+    border: 10px solid blue;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
+#get-started {
+    background: blue;
+    color: white;
+    margin-bottom: 20px;
+}
 
+#recipient, #message-text {
+    border: 5px solid blue;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#send-button, #reply-button{
+    background: blue;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.message-recipient li {
+    list-style-type: none;
+}
+
+.responseButtons {
+    border: 5px solid blue;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#turquoise-button {
+    background: turquoise;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 10px;
+}
+#green-button {
+    background: green;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    margin-left: 10px;
+    padding: 10px;
+}
+#red-button {
+    background: red;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#yellow-button {
+    background: yellow;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin-left: 5px;
+}
+#orange-button {
+    background: orange;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin-left: 10px;
+}
+#blue-button {
+    background: blue;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin-left: 10px;
+}
+#purple-button {
+    background: purple;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin-left: 10px;
+}
+#pink-button {
+    background: pink;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin-left: 10px;
+}
+#lightgreen-button {
+    background: lightgreen;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin-left: 10px;
+    
+}
+#lightblue-button {
+    background: lightblue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin-left: 10px;
+}
+#lavender-button {
+    background: lavender;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+footer p {
+    text-align: center;
+    line-height: 1.0;
+    font-size: 12px;
+}

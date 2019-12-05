@@ -39,7 +39,7 @@ class SendMessage extends React.Component {
                     <h3>Message</h3>
                     <input type="text" name="sentMessage" id="message-text" placeholder="Type your message here" required></input>
                     <br></br>
-                   <button type='submit'>Send Message</button>
+                   <button type='submit' id="send-button">Send Message</button>
                 </form>
                 <MessagesList {...this.props}/>
             </section>

@@ -6,8 +6,8 @@ function Header() {
     <>
         <nav role="navigation">
           <ul className="navLinks"> 
-            <li>Start Here<Link to='/send-message'></Link></li>
-            <li>Home<Link to='/homepage'></Link></li>
+            <li><Link to='/send-message'>Start Here</Link></li>
+            <li><Link to='/homepage'>Home</Link></li>
           </ul>
         </nav>
         <br></br>

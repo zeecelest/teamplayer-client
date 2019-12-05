@@ -34,9 +34,10 @@ onReply = (e) => {
     // const { messages } = this.state
     this.messages = this.state.messages.map((message) => 
       <div className="message-recipient" key={message.id}>
-        <li>Recipient:{ message.recipient }</li>
-        <li>Message:{ message.message }</li>
-        <button type="button" onClick={this.onReply}>Reply</button>
+        <li>Recipient:  { message.recipient }</li>
+        <li>Message:  { message.message }</li>
+        <li>Date:  { message.date_published }</li>
+        <button type="button" id="reply-button" onClick={this.onReply}>Reply</button>
       </div>
     )
     // console.log(this.state.messages);
@@ -45,6 +46,8 @@ onReply = (e) => {
       // )
     return (
       <>
+        <h2>Previous Messages</h2>
+    
      {this.messages}
       </>
         )

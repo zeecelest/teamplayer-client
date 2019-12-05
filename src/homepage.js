@@ -52,7 +52,7 @@ class Homepage extends React.Component {
 <form onSubmit={this.onSubmit}>
                     {/* <h3>Enter a username to get started.</h3>
                     <input type="text" name="username" id="username" placeholder="i.e. John" required></input> */}
-                    <Link to='/send-message'><button>Get Started</button></Link>
+                    <Link to='/send-message'><button id="get-started">Get Started</button></Link>
                 </form>
 {/* <button>Get Started</button> */}
 </>
