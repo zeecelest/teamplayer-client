@@ -6,7 +6,8 @@ class SendMessage extends React.Component {
         e.preventDefault();
         let data = {
             recipient: e.target.recipient.value,
-            message: e.target.sentMessage.value, 
+            message: e.target.sentMessage.value
+            
             
         };
 

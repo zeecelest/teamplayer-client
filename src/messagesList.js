@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class MessagesList extends Component {
   constructor(props) {
@@ -26,20 +26,28 @@ class MessagesList extends Component {
       } 
     }
 
-onReply = (e) => {
+onReply = (e, id) => {
   this.props.history.push("/response-message")
 }
     
   render() {
     // const { messages } = this.state
     this.messages = this.state.messages.map((message) => 
-      <div className="message-recipient" key={message.id}>
-        <li>Recipient:  { message.recipient }</li>
-        <li>Message:  { message.message }</li>
-        <li>Date:  { message.date_published }</li>
-        <button type="button" id="reply-button" onClick={this.onReply}>Reply</button>
-      </div>
+       message.reply ? ( <div className="message-recipient message-reply" key={message.id}>
+          <li>Recipient:  { message.reply.recipient }</li>
+          <li>Message:  { message.reply.message }</li>
+          <li>Date:  { message.reply.date_published }</li>
+          <button type="button" id="reply-button" onClick={this.onReply(this, message.id)}>Reply</button>
+        </div>) : ( <div className="message-recipient" key={message.id}>
+          <li>Recipient:  { message.recipient }</li>
+          <li>Message:  { message.message }</li>
+          <li>Date:  { message.date_published }</li>
+          <Link to={{pathname: "/response-message", state: { messageid: message.id}}}>Reply</Link>
+        </div>
+        )
     )
+
+
     // console.log(this.state.messages);
     // const x = messages.map(message => 
     //  
@@ -47,8 +55,7 @@ onReply = (e) => {
     return (
       <>
         <h2>Previous Messages</h2>
-    
-     {this.messages}
+          {this.messages}
       </>
         )
       }

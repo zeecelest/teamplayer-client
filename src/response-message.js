@@ -7,7 +7,8 @@ class ResponseMessage extends React.Component {
     
         let data = {
                 // recipient: e.target.recipient.value,
-                message 
+                message,
+                replyFor: this.props.location.state.messageid.value
                 
             };
     
