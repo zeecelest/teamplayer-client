@@ -20,10 +20,11 @@ nav ul{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    list-style-type: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     font-family: 'Merriweather Sans', sans-serif;
     width:100%;
-    padding: 20px;
+    padding: 10px;
     background-color: whitesmoke;
     color:#141719;
     position: fixed;
@@ -31,17 +32,14 @@ nav ul{
     left: 0;
     right: 0;
     z-index: 10;
+    text-decoration: none;
+    margin: 0;
+   
     
 }
-
- nav ul {
-    flex-direction: row;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-} 
 #navLinks {
     border: 3px solid blue;
+    text-decoration: none;
 }
 
 #home {
@@ -54,28 +52,39 @@ nav ul{
     flex-direction: column;
     justify-items: center;
     text-align: center;
+    background-color: white;
+    border: 7px solid blue;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 .about {
     flex-direction: column;
     text-align: center;
-    background-color:white;
-    border: 10px solid blue;
+    background-color: blue;
+    color: white;
     padding: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.leader-description {
+.leader-description, .member-description {
     background-color: white;
+    border: 7px solid blue;
     padding: 10px;
     margin-top: 20px;
-    width: 50%;
+  
+}
+
+h3 {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    
 }
 
 .screenShots {
     flex-direction: column;
     text-align: center;
-    border: 10px solid blue;
+    border: 7px solid blue;
+    background-color: white;
     padding: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -83,29 +92,62 @@ nav ul{
 #get-started {
     background: blue;
     color: white;
+    margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: 30%;
+    padding: 10px;
+    font-size: medium;
+    flex-direction: column;
+    
 }
 
-#recipient, #message-text {
-    border: 5px solid blue;
+h4 {
+    background-color: white;
     padding: 10px;
+    border: 7px solid blue;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+#recipient, #message-text {
+    border: 7px solid blue;
+    padding: 20px;
+    width: 100%; 
+}
 
-#send-button, #reply-button{
+#send-button{
     background: blue;
     color: white;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding: 5px;
+    padding: 10px;
+}
+
+h2 {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+}
+
+#reply-button {
+    margin-bottom: 10px;
+    background: blue;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: small;
+    
 }
 
 .message-recipient li {
     list-style-type: none;
+    background-color: white;
+    border: 7px solid blue;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .responseButtons {
-    border: 5px solid blue;
+    border: 10px solid blue;
+    background-color: white;
     padding: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -193,6 +235,12 @@ nav ul{
     margin-left: 10px;
 }
 
+#home {
+    margin-left: 40%;
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: small;
+}
 footer p {
     text-align: center;
     line-height: 1.0;

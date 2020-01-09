@@ -42,7 +42,8 @@ onReply = (e, id) => {
           <li>Recipient:  { message.recipient }</li>
           <li>Message:  { message.message }</li>
           <li>Date:  { message.date_published }</li>
-          <Link to={{pathname: "/response-message", state: { messageid: message.id}}}>Reply</Link>
+          <Link to="/response-message"><button type="button" id="reply-button" onClick={this.onReply}>Reply</button>
+          </Link>
         </div>
         )
     )
