@@ -1,3 +1,17 @@
+## Project Name:
+Team Player
+
+## Developer:
+LaZandrea 'Zee' Celestine
+
+
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

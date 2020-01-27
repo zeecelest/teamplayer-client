@@ -18,6 +18,7 @@ class App extends React.Component {
     return ( 
       <>
       <Header></Header>
+      <Route exact path="/" component={Homepage} />
       <Route exact path="/homepage" component={Homepage} />
       <Route exact path="/messagesList" component={MessagesList} />
       <Route exact path="/send-message" component={SendMessage} />

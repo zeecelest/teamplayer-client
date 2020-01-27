@@ -1,0 +1,13 @@
+"version": 2,
+"alias": "zee-team-player-app",
+"name": "team-player-client",
+"routes": [
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": ".*",
+      "dest": "/index.html"
+    }
+]
+}
