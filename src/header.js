@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function Header() {
+function header() {
     return (
     <>
         <nav role="navigation">
@@ -18,4 +18,4 @@ function Header() {
     );
 };
 
-export default Header;
+export default header;

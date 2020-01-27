@@ -11,7 +11,7 @@ class SendMessage extends React.Component {
             
         };
 
-        fetch(`http://localhost:8000/api/messages/`, {
+        fetch(`https://team-player-client.zeecelest.now.sh/api/messages/`, {
             method: "POST",
             headers: {
                 "content-type": "application/json"
