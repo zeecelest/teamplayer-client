@@ -14,7 +14,7 @@ class MessagesList extends Component {
   async componentDidMount() { 
     try { 
       this.intervalId = setInterval(async () => { 
-      fetch('https://teamplayer-api.herokuapp.com/api/messages/')
+      fetch('https://localhost:8000/api/messages/')
       .then(response => response.json())
       .then(data => {
         this.setState({
